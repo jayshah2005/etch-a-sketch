@@ -1,0 +1,23 @@
+body{
+    background-color: lightgrey;
+    display: flex;
+}
+
+.canvasDiv{
+    height: 6vh;
+    width: 6vh;
+    background-color: white;
+}
+
+.canvasRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.canvas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
