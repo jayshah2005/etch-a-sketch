@@ -1,8 +1,15 @@
 // New grid button
 const newGridButton = document.querySelector("#newGridButton");
 newGridButton.addEventListener('click', () => {
+
+    const squaresPerSides = prompt("Number of squares per side in the new grid: ")
+
+    while(squaresPerSides > 100) {
+        squaresPerSides = prompt("Please enter a number less than 100: ")
+    }
+
     document.querySelector('.canvas').remove();
-    createCanvas(prompt("Number of squares per side in the new grid: ", 16))
+    createCanvas(squaresPerSides)
 })
 
 // Hover events
