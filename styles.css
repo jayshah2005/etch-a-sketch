@@ -1,11 +1,17 @@
 body{
     background-color: lightgrey;
+    flex-direction: column;
     display: flex;
 }
 
+#newGridButton{
+    margin: 5px;
+    padding: 5px;
+    background-color: yellow;
+    max-width: 50px;
+}
+
 .canvasDiv{
-    height: 6vh;
-    width: 6vh;
     background-color: white;
 }
 
@@ -15,9 +21,13 @@ body{
 }
 
 .canvas{
+    height: 500px;
+    width: 500px;
+}
+
+#body{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex:1;
     align-items: center;
-    flex: 1;
+    justify-content: center;
 }
